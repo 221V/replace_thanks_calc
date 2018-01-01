@@ -57,7 +57,7 @@ function we_calc(){
     save_to_local('pages',pages);
     save_to_local('our_data',data);
     window.location.href = qc('paging')[0].lastChild.href;
-  }else{ console.log(data[0]); console.log(data[1]); console.log(data[2]); alert('it\'s all!'); }
+  }else{ console.log(data[0]); console.log(data[1]); console.log(data[2]); alert('it\'s all!'); save_to_local('pages',false); save_to_local('our_data',false); }
 };
 
 we_calc();
